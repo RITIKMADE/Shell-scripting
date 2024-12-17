@@ -16,9 +16,12 @@
 #assumme i need to create the multiples files using for loop function then we can achieve this using two methods
 #FIrst Method
 #In this we seperate diffrent file using space as given below
-for file in hundread thousand million billion trillion
-do 
-touch $file
+# for file in hundread thousand million billion trillion
+# do 
+# rm -rf $file
+# done
+
+#Second method by creating the file and mentioed all the name, and called via the $() like below
+for file in "$(cat example.txt)"
+do rm -rf  $file
 done
-#Second method by creating file and put all the files name in that file like below.
-for file in 
