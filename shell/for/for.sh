@@ -25,3 +25,5 @@
 for file in "$(cat example.txt)"
 do rm -rf  $file
 done
+
+# we can use for to download multiple packages by mentioning it to the file.
